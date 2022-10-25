@@ -1,9 +1,11 @@
 .swipper__wrapper {
+  background-color: #091217;;
   background-image: url("../media/Slider (2).png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
+  align-items: center;
   padding: 7rem 0;
 }
 
@@ -46,7 +48,6 @@
 
 .swipper__wrapper .swipper__content {
   display: flex;
-  gap: 15rem;
 }
 
 .swipper__wrapper .swipper__text {
@@ -92,4 +93,29 @@
     height: 40px !important;
     transform: scale(0.4);
     transition: border .2s;
+}
+
+@media only screen and (min-width: 1025px) {
+  .swipper__content {
+    padding: 0 5rem;
+    justify-content: space-between;
+  }
+
+  .swipper__image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .swipper__content {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .swipper__content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
 }

@@ -84,7 +84,6 @@ button {
 .stat {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .stat>div {
@@ -128,6 +127,7 @@ button {
 }
 
 .signup__button>button {
+    border: none;
     background-color: #000000;
     padding: 1.5rem 3rem;
     border-radius: 16px;
@@ -154,7 +154,6 @@ button {
 
 .companies__line {
     display: flex;
-    width: 200%;
 }
 
 .companies__line span {
@@ -193,12 +192,12 @@ button {
 .choose__tabs_content img:last-of-type {
     z-index: 1;
     margin: auto;
-    border-radius: 12px;    
+    border-radius: 12px;
 }
 
 .choose__tabs_content img:first-of-type {
     z-index: -1;
-    top: 100px;  
+    top: 100px;
 }
 
 .choose__tabs {
@@ -210,6 +209,7 @@ button {
 .choose__partner_wrapper {
     padding-bottom: 20rem;
 }
+
 .choose__partner_content {
     text-align: center;
 }
@@ -240,11 +240,16 @@ footer {
     position: absolute;
     background: linear-gradient(180deg, #3AF09D 4.71%, #47B482 61.96%, #10412B 108.4%);
     border-radius: 12px;
+    padding: 5rem 5rem;
+}
+
+.footer__content section>div {
+    max-width: 50rem;
+    margin: auto;
     display: flex;
     text-align: left;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 10rem;
 }
 
 .footer__content>span {
@@ -286,7 +291,38 @@ footer {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .stat {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .companies__line {
+        width: 200%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .stat {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .companies__line {
+        width: 300%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .stat {
+        grid-template-columns: 1fr;
+    }
+
+    .companies__line {
+        width: 350%;
     }
 }
