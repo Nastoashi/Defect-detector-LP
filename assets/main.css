@@ -2,22 +2,16 @@
 
 h1 {
     color: #97B1C0;
-    font-size: 65px;
-    line-height: 79px;
 }
 
 h2 {
     font-weight: 400;
-    font-size: 43px;
-    line-height: 52px;
     color: #000000;
 }
 
 p {
     color: #3D5C6F;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
 }
 
 button {
@@ -36,7 +30,6 @@ button {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 0 7rem;
 }
 
 .hero__content {
@@ -74,7 +67,6 @@ button {
 .stat__content {
     max-width: 1680px;
     margin: auto;
-    padding: 7rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -206,6 +198,7 @@ button {
 }
 
 .choose__partner_wrapper {
+
     padding-bottom: 20rem;
 }
 
@@ -214,7 +207,6 @@ button {
 }
 
 .choose__partner_content h1 {
-    width: 43rem;
     margin: 0 auto .5rem;
 }
 
@@ -243,7 +235,6 @@ footer {
 }
 
 .footer__content section>div {
-    max-width: 50rem;
     margin: auto;
     display: flex;
     text-align: left;
@@ -297,18 +288,69 @@ footer {
 }
 
 @media only screen and (min-width: 1025px) {
+    h1 {
+        font-size: 65px;
+        line-height: 79px;
+    }
+
+    h2 {
+        font-size: 43px;
+        line-height: 52px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .hero__wrapper {
+        padding: 0 7rem;
+    }
+
     .stat {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .stat__content {
+        padding: 7rem;
     }
 
     .companies__line {
         width: 200%;
     }
+
+    .choose__partner_content h1 {
+        width: 43rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    h1 {
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .hero__wrapper {
+        padding: 0 5rem;
+    }
+
     .stat {
+        gap: 2rem;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .stat__content {
+        padding: 5rem;
     }
 
     .companies__line {
@@ -317,8 +359,32 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .hero__wrapper {
+        padding: 0 3rem;
+    }
+
     .stat {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .stat__content {
+        padding: 3rem;
     }
 
     .companies__line {
