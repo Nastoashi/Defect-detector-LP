@@ -193,7 +193,7 @@ video {
     visibility: hidden;
     -webkit-box-shadow: var(--shadow-medium);
     box-shadow: var(--shadow-medium);
-    background-color: var(--color-white-100);
+    background-color: #091217;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
@@ -215,7 +215,6 @@ video {
   text-transform: uppercase;
   color: #FFFFFF;
   gap: 1rem;
-  font-size: 25px;
 }
 
 .menu-item {
@@ -286,15 +285,23 @@ video {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1.25rem;
-    color: var(--color-black-500) !important;
+    color: #97B1C0 !important;
   }
 
   .wrapper {
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
+  }
+
+  .logo {
+    font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 993px) {
+  .logo {
+    font-size: 25px;
+  }
+
   .login {
     display: flex;
     text-align: center;
@@ -315,6 +322,10 @@ video {
     font-size: 24px;
     gap: .5rem;
     padding: 1rem 2rem;
+  }
+
+  .login-menu {
+    display: none;
   }
 
   .wrapper {

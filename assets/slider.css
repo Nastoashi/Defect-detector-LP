@@ -6,7 +6,6 @@
   background-position: center;
   text-align: center;
   align-items: center;
-  padding: 7rem 0;
 }
 
 .cont {
@@ -95,6 +94,10 @@
 }
 
 @media only screen and (min-width: 1025px) {
+  .swipper__wrapper {
+    padding: 7rem 0;
+  }
+
   .swipper__wrapper .swipper__text {
     max-width: 25rem;
   }
@@ -110,6 +113,10 @@
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .swipper__wrapper {
+    padding: 5rem 0;
+  }
+
   .swipper__content {
     text-align: center;
     padding: 0 5rem;
@@ -119,6 +126,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .swipper__wrapper>h1, .swipper__wrapper>p {
+    padding: 2rem 2rem 0;
+  }
+
   .swipper__content {
     text-align: center;
     padding: 0 5rem;
