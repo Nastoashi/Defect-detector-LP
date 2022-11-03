@@ -20,6 +20,10 @@ button {
     font-weight: 700;
 }
 
+body {
+    background-color: #091217;
+}
+
 .hero__wrapper {
     background-image: url("../media/Landing.png");
     background-repeat: no-repeat;
@@ -167,7 +171,6 @@ button {
 }
 
 .choose__tabs_content {
-    padding: 7rem;
     margin: auto;
     text-align: center;
 }
@@ -185,7 +188,6 @@ button {
 
 .choose__tabs_content img:first-of-type {
     z-index: -1;
-    top: 100px;
 }
 
 .choose__tabs {
@@ -318,6 +320,14 @@ footer {
         width: 200%;
     }
 
+    .choose__tabs_content img:first-of-type {
+        top: 100px;
+    }
+
+    .choose__tabs_content {
+        padding: 7rem;
+    }
+
     .choose__partner_content h1 {
         width: 43rem;
     }
@@ -374,6 +384,14 @@ footer {
         width: 300%;
     }
 
+    .choose__tabs_content img:first-of-type {
+        top: 100px;
+    }
+
+    .choose__tabs_content {
+        padding: 5rem;
+    }
+
     .signup__text {
         width: 50%;
     }
@@ -423,6 +441,14 @@ footer {
 
     .companies__line {
         width: 500%;
+    }
+
+    .choose__tabs_content img:first-of-type {
+        top: 50px;
+    }
+
+    .choose__tabs_content {
+        padding: 3rem;
     }
 
     .footer__content section {

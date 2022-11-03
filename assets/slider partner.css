@@ -1,5 +1,4 @@
 .choose__wrapper .swiper {
-    margin-top: 5rem;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -8,12 +7,10 @@
 }
 
 .choose__wrapper .swiper-slide {
-    padding: 3rem 4.3rem 5rem;
     text-align: center;
     font-size: 18px;
     border-radius: 25px;
     background: #091217;
-    width: 50% !important;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -83,3 +80,36 @@
 .choose__wrapper .swiper-slide div:last-of-type img {
     margin: 1rem 0;
 }
+
+@media only screen and (min-width: 1025px) {
+    .choose__wrapper .swiper {
+        margin-top: 5rem;
+    }
+
+    .choose__wrapper .swiper-slide {
+        padding: 3rem 4.3rem 5rem;
+        width: 50% !important;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .choose__wrapper .swiper {
+        margin-top: 5rem;
+    }
+
+    .choose__wrapper .swiper-slide {
+        padding: 3rem 4.3rem 5rem;
+        width: 50% !important;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .choose__wrapper .swiper {
+        margin-top: 2rem;
+    }
+
+    .choose__wrapper .swiper-slide {
+        padding: 3rem 3.3rem 5rem;
+        width: 80% !important;
+    }
+  }
