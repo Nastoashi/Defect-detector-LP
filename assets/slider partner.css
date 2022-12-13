@@ -83,8 +83,12 @@
     margin: 1rem 0;
 }
 
+.choose__wrapper .swiper-slide p {
+    min-height: 7rem;
+}
+
 .choose__wrapper .swiper-slide span:first-of-type {
-    margin-bottom: .3rem;
+    margin: 1rem 0rem .7rem;
     color: #45AC7D;
     font-size: 24px;
     line-height: 29px;

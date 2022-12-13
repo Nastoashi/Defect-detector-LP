@@ -148,11 +148,17 @@ body {
     display: flex;
 }
 
-.companies__line span {
+.companies__line>span {
     width: 100%;
     display: flex;
     justify-content: space-around;
     animation: ticker 40s linear infinite;
+}
+
+.companies__line span>span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #45AC7D;
 }
 
 .choose__wrapper {
@@ -178,6 +184,14 @@ body {
 .choose__tab_img {
     z-index: 2;
     position: relative;
+}
+
+.choose__tab_img>svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .choose__tabs_content img:last-of-type {
@@ -309,7 +323,7 @@ footer {
     }
 
     .stat {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .stat__content {
