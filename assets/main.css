@@ -5,6 +5,10 @@ h1 {
 }
 
 h2 {
+    color: #97B1C0;
+}
+
+h3 {
     font-weight: 400;
     color: #000000;
 }
@@ -107,7 +111,7 @@ body {
     text-transform: uppercase;
 }
 
-.signup__text>h2 {
+.signup__text>h3 {
     margin: 1rem 0;
 }
 
@@ -125,7 +129,8 @@ body {
     border-radius: 16px;
 }
 
-.signup__button>button>a {
+.signup__button>button {
+    cursor: pointer;
     color: #45AC7D;
     font-size: 24px;
     line-height: 29px;
@@ -156,7 +161,7 @@ body {
 }
 
 .companies__line span>span {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: #45AC7D;
 }
@@ -287,6 +292,88 @@ footer {
     color: #3D5C6F;
 }
 
+.modal {
+    background-color: #000;
+    background-color: rgba(0,0,0,.4);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.modal-content {
+    position: absolute;
+    color: #729D9E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #101C24;
+    border-radius: 25px;
+    padding: 1.5rem 5rem 2rem;
+    text-align: center;
+}
+
+.modal-content h3 {
+    color: #97B1C0;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.popup-close {
+    position: absolute;
+    color: #45AC7D;
+    font-size: 34px;
+    font-weight: bold;
+    top: 1.5rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+.modal-content form {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.modal-content form>input:first-of-type {
+    width: 25rem;
+    font-size: 1rem;
+    outline: none;
+    padding: .7rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background: #081015;
+    color: #45AC7D;
+}
+
+.modal-content form>input:first-of-type::placeholder {
+    color: #97B1C0;
+}
+
+input:-internal-autofill-selected {
+    background-color: red !important;
+    color: blue !important;
+}
+
+.modal-content form>input:last-of-type {
+    font-size: 1rem;
+    color: #FFF;
+    cursor: pointer;
+    padding: .7rem 1rem;
+    outline: none;
+    border: none;
+    background: #45AC7D;
+    border-radius: 12px;
+}
+
+#form-thankyou {
+    display: none;
+}
+
 @keyframes ticker {
     0% {
         transform: translateX(0%);
@@ -304,6 +391,11 @@ footer {
     }
 
     h2 {
+        font-size: 65px;
+        line-height: 79px;
+    }
+
+    h3 {
         font-size: 43px;
         line-height: 52px;
     }
@@ -351,7 +443,7 @@ footer {
     }
 
     footer {
-        padding: 15rem 10rem 10rem;
+        padding: 15rem 10rem 6rem;
     }
 
     .footer__content section {
@@ -367,6 +459,11 @@ footer {
     }
 
     h2 {
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    h3 {
         font-size: 30px;
         line-height: 40px;
     }
@@ -422,6 +519,11 @@ footer {
 
 @media only screen and (max-width: 767px) {
     h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    h2 {
         font-size: 40px;
         line-height: 55px;
     }

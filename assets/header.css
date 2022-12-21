@@ -298,6 +298,13 @@ video {
 }
 
 @media only screen and (min-width: 993px) {
+  .navbar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .logo {
     font-size: 25px;
   }
@@ -329,6 +336,7 @@ video {
   }
 
   .wrapper {
+    position: relative;
     padding: 2rem 5rem;
   }
 }
