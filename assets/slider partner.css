@@ -112,6 +112,10 @@
     z-index: -1;
 }
 
+.choose__partner_content .swiper-button-next, .choose__partner_content .swiper-button-prev {
+    display: none;
+}
+
 @media only screen and (min-width: 1025px) {
     .choose__wrapper .swiper {
         margin-top: 5rem;
@@ -144,7 +148,7 @@
     }
 
     .choose__wrapper .swiper-slide>div:first-of-type {
-        padding: 3rem 4.3rem 5rem;
+        padding: 3rem 2rem 3rem;
         border-radius: 25px;
         background: #091217;
         width: 80% !important;

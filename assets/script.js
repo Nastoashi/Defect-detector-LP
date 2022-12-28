@@ -30,16 +30,16 @@ overlayMenu.addEventListener('click', toggleMenu);
 window.addEventListener('resize', resizeWindow);
 
 function openPopup() {
-    formPopup.style.display = "block";
+    formPopup.classList.add("show");
 }
 
 formClose.onclick = function() {
-    formPopup.style.display = "none";
+    formPopup.classList.remove("show");
 }
 
 window.onclick = function(event) {
   if (event.target == formPopup) {
-    formPopup.style.display = "none";
+    formPopup.classList.remove("show");
   }
 }
 
