@@ -25,6 +25,7 @@ button {
 }
 
 body {
+    cursor: default;
     background-color: #091217;
 }
 
@@ -210,6 +211,36 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 7rem auto 4rem;
+}
+
+.choose__tab {
+    cursor: pointer;
+}
+
+.choose__tab svg {
+    margin-bottom: 1rem;
+}
+
+.choose__tab .fill, .choose__tab_disc>span  {
+    transition: all 0.3s ease-in-out;
+}
+
+.choose__tabs .filled .fill {
+    fill: #47B482;
+}
+
+.choose__tabs .choose__tab_disc>span {
+    color: #3D5C6F;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.choose__tabs .filled .choose__tab_disc>span {
+    color: #45AC7D;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .choose__partner_wrapper {
@@ -445,6 +476,10 @@ input:-internal-autofill-selected {
         font-size: 2.5rem;
     }
 
+    .choose__tab {
+        width: 33.33%;
+    }
+
     .choose__tabs_content img:first-of-type {
         top: 100px;
     }
@@ -535,6 +570,10 @@ input:-internal-autofill-selected {
         font-size: 2rem;
     }
 
+    .choose__tab {
+        width: 33.33%;
+    }
+
     .choose__tabs_content img:first-of-type {
         top: 100px;
     }
@@ -615,6 +654,10 @@ input:-internal-autofill-selected {
 
     .companies__line span>span {
         font-size: 1.5rem;
+    }
+
+    .choose__tabs {
+        flex-direction: column;
     }
 
     .choose__tabs_content img:first-of-type {
