@@ -133,6 +133,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .swipper__wrapper {
+    padding: 3rem 0;
+  }
+  
   .swipper__wrapper>h1, .swipper__wrapper>p {
     padding: 2rem 2rem 0;
   }

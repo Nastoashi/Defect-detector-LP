@@ -210,7 +210,6 @@ body {
 .choose__tabs {
     display: flex;
     justify-content: space-around;
-    margin: 7rem auto 4rem;
 }
 
 .choose__tab {
@@ -476,6 +475,10 @@ input:-internal-autofill-selected {
         font-size: 2.5rem;
     }
 
+    .choose__tabs {
+        margin: 7rem auto 4rem;
+    }
+
     .choose__tab {
         width: 33.33%;
     }
@@ -570,6 +573,10 @@ input:-internal-autofill-selected {
         font-size: 2rem;
     }
 
+    .choose__tabs {
+        margin: 7rem auto 4rem;
+    }
+
     .choose__tab {
         width: 33.33%;
     }
@@ -657,6 +664,11 @@ input:-internal-autofill-selected {
     }
 
     .choose__tabs {
+        margin: 1rem auto 4rem;
+    }
+
+    .choose__tabs {
+        gap: 3rem;
         flex-direction: column;
     }
 
