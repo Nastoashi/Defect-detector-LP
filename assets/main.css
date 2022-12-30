@@ -220,7 +220,8 @@ body {
     margin-bottom: 1rem;
 }
 
-.choose__tab .fill, .choose__tab_disc>span  {
+.choose__tab .fill,
+.choose__tab_disc>span {
     transition: all 0.3s ease-in-out;
 }
 
@@ -320,7 +321,7 @@ footer {
 
 .modal {
     background-color: #000;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     display: block;
     height: 100%;
     left: 0;
@@ -333,9 +334,9 @@ footer {
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .modal.show {
@@ -345,14 +346,9 @@ footer {
 }
 
 .modal-content {
-    position: absolute;
     color: #729D9E;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #101C24;
     border-radius: 25px;
-    padding: 1.5rem 5rem 2rem;
     text-align: center;
     box-shadow: 0px 16px 16px -6px rgba(0, 0, 0, 0.5);
 }
@@ -368,7 +364,7 @@ footer {
     font-size: 34px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
 .modal-content form {
     display: flex;
@@ -378,7 +374,6 @@ footer {
 }
 
 .modal-content form>input:first-of-type {
-    font-size: 1.3rem;
     outline: none;
     padding: .7rem 1rem;
     border: none;
@@ -397,7 +392,6 @@ input:-internal-autofill-selected {
 }
 
 .modal-content form>input:last-of-type {
-    font-size: 1.3rem;
     color: #FFF;
     cursor: pointer;
     padding: .7rem 1.5rem;
@@ -499,8 +493,21 @@ input:-internal-autofill-selected {
         width: 50%;
     }
 
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem 5rem 2rem;
+    }
+
     .modal-content form>input:first-of-type {
         width: 25rem;
+        font-size: 1.3rem;
+    }
+
+    .modal-content form>input:last-of-type {
+        font-size: 1.3rem;
     }
 
     .popup-close {
@@ -515,6 +522,10 @@ input:-internal-autofill-selected {
     .footer__content section {
         top: -250px;
         padding: 4rem;
+    }
+
+    .footer__logo span {
+        font-size: 24px;
     }
 }
 
@@ -594,6 +605,22 @@ input:-internal-autofill-selected {
         right: 2rem;
     }
 
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem 5rem 2rem;
+    }
+
+    .modal-content form>input:first-of-type {
+        font-size: 1.3rem;
+    }
+
+    .modal-content form>input:last-of-type {
+        font-size: 1.3rem;
+    }
+
     footer {
         padding: 15rem 10rem 3rem;
     }
@@ -606,6 +633,10 @@ input:-internal-autofill-selected {
     .footer__content section>div {
         gap: 3rem;
         flex-direction: column;
+    }
+
+    .footer__logo span {
+        font-size: 24px;
     }
 }
 
@@ -680,6 +711,26 @@ input:-internal-autofill-selected {
         padding: 3rem;
     }
 
+    .modal-content {
+        position: relative;
+        margin: 40% auto;
+        width: 80%;
+        padding: 1.5rem 2rem 2rem;
+    }
+
+    .modal-content form {
+        flex-direction: column;
+    }
+
+    .modal-content form>input:first-of-type {
+        font-size: 1rem;
+    }
+
+
+    .modal-content form>input:last-of-type {
+        font-size: 1rem;
+    }
+
     .popup-close {
         top: 0rem;
         right: .8rem;
@@ -697,5 +748,9 @@ input:-internal-autofill-selected {
     .footer__content section>div {
         gap: 3rem;
         flex-direction: column;
+    }
+
+    .footer__logo span {
+        font-size: 20px;
     }
 }
