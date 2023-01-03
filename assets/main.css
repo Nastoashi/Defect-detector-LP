@@ -370,6 +370,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     gap: 3rem;
 }
 
@@ -404,6 +405,12 @@ input:-internal-autofill-selected {
 #form-thankyou {
     display: none;
 }
+
+#error {
+   color: #bb6161;
+}
+
+
 
 @keyframes ticker {
     0% {

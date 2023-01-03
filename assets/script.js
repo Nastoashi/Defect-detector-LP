@@ -3,7 +3,8 @@ const burgerMenu = document.getElementById('burger');
 const overlayMenu = document.querySelector('.overlay');
 const formPopup = document.getElementById("modal");
 const formClose = document.getElementsByClassName("popup-close")[0];
-const em = document.getElementById('email');
+var em = document.getElementById('email');
+var emError = document.getElementById('error');
 const submit = document.getElementById('submit');
 
 // Show and Hide Navbar Function
@@ -43,8 +44,18 @@ window.onclick = function(event) {
   }
 }
 
+function validateEmail() {
+  if(!em.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+    emError.innerHTML = "Please enter a valid email";
+    return false
+  }
+  emError.innerHTML = "";
+  return true
+}
+
 submit.addEventListener('submit',(e)=>{
-    e.preventDefault();
+  e.preventDefault();
+  if (validateEmail() == true) {
     let ebody = `
     <h1>Email: </h1>${em.value}
     `;
@@ -61,4 +72,6 @@ submit.addEventListener('submit',(e)=>{
     document.getElementById('form-submit').style.display = "none";
       }
     );
+  }
 });
+

@@ -100,6 +100,10 @@
 }
 
 @media only screen and (min-width: 1025px) {
+  .swipper__title {
+    padding: 0 5rem;
+  }
+
   .swipper__wrapper {
     padding: 7rem 0;
   }
@@ -120,6 +124,10 @@
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .swipper__title {
+    padding: 0 2rem;
+  }
+
   .swipper__wrapper {
     padding: 5rem 0;
   }
@@ -133,12 +141,12 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .swipper__title {
+    padding: 0 2rem;
+  }
+
   .swipper__wrapper {
     padding: 3rem 0;
-  }
-  
-  .swipper__wrapper>h1, .swipper__wrapper>p {
-    padding: 2rem 2rem 0;
   }
 
   .swipper__content {
