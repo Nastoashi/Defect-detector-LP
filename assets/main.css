@@ -189,12 +189,8 @@ body {
     position: relative;
 }
 
-.choose__tab_img>svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
+.choose__tab_img>video {
+    margin: auto;
 }
 
 .choose__tabs_content img:last-of-type {
@@ -244,7 +240,7 @@ body {
 }
 
 .choose__partner_wrapper {
-    padding-bottom: 20rem;
+    padding-bottom: 5rem;
 }
 
 .choose__partner_content {
@@ -410,6 +406,48 @@ input:-internal-autofill-selected {
    color: #bb6161;
 }
 
+.contact__wrapper {
+    background-image: url(../media/logoipsum-269\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact__content>div {
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    border-radius: 12px;
+}
+
+.contact__content>div>div:first-of-type {
+    margin-bottom: 1rem;
+}
+
+.contact__content>div span:first-of-type {
+    color: #45AC7D;
+}
+
+.contact__content>div span:last-of-type {
+    color: #729D9E;
+}
+
+.contact__content>div svg {
+    margin: .5rem auto;
+    cursor: pointer;
+    display: flex;
+    padding: .2rem;
+    border: solid 1px #729D9E;
+    border-radius: 50%;
+}
+
 
 
 @keyframes ticker {
@@ -494,6 +532,22 @@ input:-internal-autofill-selected {
 
     .choose__partner_content h1 {
         width: 43rem;
+    }
+
+    .contact__content {
+        padding: 7rem 0 20rem;
+    }
+
+    .contact__content>div {
+        padding: 3rem;
+    }
+
+    .contact__content>div span:first-of-type {
+        font-size: 25px;
+    }
+
+    .contact__content>div span:last-of-type {
+        font-size: 25px;
     }
 
     .signup__text {
@@ -607,6 +661,22 @@ input:-internal-autofill-selected {
         padding: 5rem;
     }
 
+    .contact__content {
+        padding: 7rem 0 20rem;
+    }
+
+    .contact__content>div {
+        padding: 3rem;
+    }
+
+    .contact__content>div span:first-of-type {
+        font-size: 25px;
+    }
+
+    .contact__content>div span:last-of-type {
+        font-size: 25px;
+    }
+
     .popup-close {
         top: 1.5rem;
         right: 2rem;
@@ -716,6 +786,23 @@ input:-internal-autofill-selected {
 
     .choose__tabs_content {
         padding: 3rem;
+    }
+
+    .contact__content {
+        padding: 3rem 0 20rem;
+    }
+
+    .contact__content>div {
+        width: 85%;
+        padding: 2rem;
+    }
+
+    .contact__content>div span:first-of-type {
+        font-size: 25px;
+    }
+
+    .contact__content>div span:last-of-type {
+        font-size: 18px;
     }
 
     .modal-content {
