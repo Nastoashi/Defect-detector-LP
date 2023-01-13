@@ -542,6 +542,11 @@ input:-internal-autofill-selected {
         padding: 3rem;
     }
 
+    .contact__content>div>span:first-of-type {
+        color: #45AC7D;
+        margin-bottom: 1.5rem;
+    }
+
     .contact__content>div span:first-of-type {
         font-size: 25px;
     }

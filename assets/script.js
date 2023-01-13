@@ -61,9 +61,9 @@ submit.addEventListener('submit',(e)=>{
     `;
 
     Email.send({
-        SecureToken : "b695515b-4e29-4846-b3ca-d08cbbdc752c", //add your token here
-        To : 'defect.detector.landing@gmail.com', 
-        From : "nastoashi.emm@gmail.com",
+        SecureToken : "f917a2ed-0f0c-4900-bca6-2360a99cd7b7", //add your token here
+        To : 'info@defectdetector.co.uk', 
+        From : "defect.detector.landing@gmail.com",
         Subject : "Submission from Defect detector LP",
         Body : ebody
     }).then(
