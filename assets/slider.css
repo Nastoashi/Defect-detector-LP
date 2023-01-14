@@ -99,6 +99,10 @@
     transition: border .2s;
 }
 
+.swiper-wrapper {
+  align-items: center;
+}
+
 @media only screen and (min-width: 1025px) {
   .swipper__title {
     padding: 0 5rem;
