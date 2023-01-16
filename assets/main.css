@@ -315,6 +315,10 @@ footer {
     color: #3D5C6F;
 }
 
+.footer__content>ul>a {
+    color: #3D5C6F;
+}
+
 .modal {
     background-color: #000;
     background-color: rgba(0, 0, 0, .4);
