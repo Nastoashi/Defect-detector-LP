@@ -432,9 +432,12 @@ input:-internal-autofill-selected {
 }
 
 .contact__content>div>div:first-of-type {
+    margin-bottom: 1rem;
+}
+
+.contact__content>div>div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
 }
 
 .contact__content>div span:first-of-type {
