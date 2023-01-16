@@ -432,6 +432,8 @@ input:-internal-autofill-selected {
 }
 
 .contact__content>div>div:first-of-type {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1rem;
 }
 
