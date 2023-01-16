@@ -439,6 +439,11 @@ input:-internal-autofill-selected {
     color: #45AC7D;
 }
 
+.contact__content>div>span:first-of-type {
+    color: #45AC7D !important;
+    margin-bottom: 1.5rem;
+}
+
 .contact__content>div span:last-of-type {
     color: #729D9E;
 }
@@ -546,16 +551,7 @@ input:-internal-autofill-selected {
         padding: 3rem;
     }
 
-    .contact__content>div>span:first-of-type {
-        color: #45AC7D;
-        margin-bottom: 1.5rem;
-    }
-
-    .contact__content>div span:first-of-type {
-        font-size: 25px;
-    }
-
-    .contact__content>div span:last-of-type {
+    .contact__content>div span:first-of-type, .contact__content>div span:last-of-type {
         font-size: 25px;
     }
 
