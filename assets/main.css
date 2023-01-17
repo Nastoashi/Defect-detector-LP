@@ -393,6 +393,7 @@ input:-internal-autofill-selected {
 }
 
 .modal-content form>input:last-of-type {
+    -webkit-appearance: none;
     color: #FFF;
     cursor: pointer;
     padding: .7rem 1.5rem;
