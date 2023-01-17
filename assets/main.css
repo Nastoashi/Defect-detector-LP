@@ -435,6 +435,11 @@ input:-internal-autofill-selected {
     margin-bottom: 1rem;
 }
 
+.contact__content>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact__content>div span:first-of-type {
     color: #45AC7D;
 }
