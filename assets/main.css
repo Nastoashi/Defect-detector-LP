@@ -749,7 +749,8 @@ input:-internal-autofill-selected {
     }
 
     .hero__wrapper {
-        padding: 5rem 3rem;
+        height: 100vh;
+        padding: 0 3rem;
     }
 
     .hero__content button {
