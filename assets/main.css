@@ -393,6 +393,7 @@ input:-internal-autofill-selected {
 }
 
 .modal-content form>input:last-of-type {
+    -webkit-appearance: none;
     color: #FFF;
     cursor: pointer;
     padding: .7rem 1.5rem;
@@ -749,7 +750,8 @@ input:-internal-autofill-selected {
     }
 
     .hero__wrapper {
-        padding: 5rem 3rem;
+        height: 100vh;
+        padding: 0 3rem;
     }
 
     .hero__content button {
