@@ -13,7 +13,7 @@ h3 {
     color: #000000;
 }
 
-p {
+h4, p {
     color: #3D5C6F;
     font-weight: 400;
 }
@@ -45,7 +45,7 @@ body {
     margin: auto;
 }
 
-.hero__content p {
+.hero__content h4 {
     margin: 1rem 0 2rem;
 }
 
@@ -261,6 +261,24 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__content>span:first-of-type {
+    margin: 1rem 0;
+}
+
+.footer__content>a {
+    margin: 1rem auto 0;
+    cursor: pointer;
+    display: flex;
+    padding: 0.3rem;
+    border: solid 1px #3D5C6F;
+    border-radius: 50%;
 }
 
 .footer__content section {
@@ -491,7 +509,7 @@ input:-internal-autofill-selected {
         line-height: 52px;
     }
 
-    p {
+    h4, p {
         font-size: 24px;
         line-height: 29px;
     }
@@ -617,7 +635,7 @@ input:-internal-autofill-selected {
         line-height: 45px;
     }
 
-    p {
+    h4, p {
         font-size: 20px;
         line-height: 25px;
     }
@@ -739,12 +757,12 @@ input:-internal-autofill-selected {
         line-height: 60px;
     }
 
-    h2 {
+    h3 {
         font-size: 30px;
         line-height: 40px;
     }
 
-    p {
+    h4, p {
         font-size: 18px;
         line-height: 25px;
     }

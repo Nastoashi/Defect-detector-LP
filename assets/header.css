@@ -14,9 +14,12 @@
   --color-pink-300: hsl(329, 86%, 70%);
   --color-pink-400: hsl(330, 81%, 60%);
   --color-pink-500: hsl(333, 71%, 50%);
-  --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 *,
@@ -40,7 +43,7 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   scroll-behavior: smooth;
-  font-family: "Inter", "Arial", sans-serif;
+  font-family: 'Inter', 'Arial', sans-serif;
   font-weight: 700;
 }
 
@@ -84,7 +87,7 @@ video {
   line-height: 1.25;
   letter-spacing: -1px;
   text-transform: uppercase;
-  color: #3698AF;
+  color: #3698af;
 }
 
 .btn {
@@ -213,7 +216,7 @@ video {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   gap: 1rem;
 }
 
@@ -249,7 +252,7 @@ video {
   line-height: inherit;
   cursor: pointer;
   text-transform: uppercase;
-  color: #F3F6F9;
+  color: #f3f6f9;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -258,7 +261,7 @@ video {
   color: var(--color-black-500);
 }
 
-.menu-link>i.bx {
+.menu-link > i.bx {
   font-size: 1.35rem;
   line-height: 1.5;
   color: inherit;
@@ -285,7 +288,7 @@ video {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1.25rem;
-    color: #97B1C0 !important;
+    color: #97b1c0 !important;
   }
 
   .wrapper {
@@ -324,10 +327,10 @@ video {
     display: flex;
     text-align: center;
     align-items: center;
-    color: #FFF;
+    color: #fff;
     text-transform: uppercase;
     font-size: 24px;
-    gap: .5rem;
+    gap: 0.5rem;
     padding: 1rem 2rem;
   }
 
@@ -365,7 +368,7 @@ video {
   opacity: 1;
   border: none;
   outline: none;
-  background: #F3F6F9;
+  background: #f3f6f9;
 }
 
 .burger-line.active {
