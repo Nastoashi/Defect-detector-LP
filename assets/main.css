@@ -505,6 +505,10 @@ input:-internal-autofill-selected {
         font-size: 24px;
     }
 
+    .mobile-login {
+        display: none;
+    }
+
     .stat {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -629,6 +633,10 @@ input:-internal-autofill-selected {
 
     .hero__content button {
         font-size: 24px;
+    }
+
+    .hero__content>a:first-of-type {
+        display: none;
     }
 
     .stat {
@@ -756,6 +764,10 @@ input:-internal-autofill-selected {
 
     .hero__content button {
         font-size: 18px;
+    }
+
+    .hero__content>a:first-of-type {
+        display: none;
     }
 
     .stat {
