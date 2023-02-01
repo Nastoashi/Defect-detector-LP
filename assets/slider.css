@@ -1,6 +1,6 @@
 .swipper__wrapper {
-  background-color: #091217;;
-  background-image: url("../media/Slider (2).png");
+  background-color: #091217;
+  background-image: url('../media/Slider (2).png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -46,7 +46,7 @@
 }
 
 .swipper__wrapper .swiper {
- padding: 5rem 0 !important; 
+  padding: 5rem 0 !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -63,19 +63,35 @@
   justify-content: center;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   width: 66px !important;
 }
 
+.swiper-button-next > path,
+.swiper-button-prev > path {
+  transition: all 0.3s ease-out;
+}
+
+.swiper-button-next:hover > path,
+.swiper-button-prev:hover > path {
+  fill: #45ac7d;
+}
+
 .swipper__wrapper .swipper__info {
-  color: #3D5C6F;
+  color: #3d5c6f;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
 }
 
 .swipper__wrapper .swipper__info.active {
-  background: linear-gradient(180deg, #3AF09D 4.71%, #47B482 61.96%, #10412B 108.4%);
+  background: linear-gradient(
+    180deg,
+    #3af09d 4.71%,
+    #47b482 61.96%,
+    #10412b 108.4%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -83,20 +99,20 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    border: 2px solid #45AC7D !important;
-    background-color: transparent !important;
-    width: 40px !important;
-    height: 40px !important;
-    transition: transform .5s;
-    transform: scale(1);
+  border: 2px solid #45ac7d !important;
+  background-color: transparent !important;
+  width: 40px !important;
+  height: 40px !important;
+  transition: transform 0.5s;
+  transform: scale(1);
 }
 
 .swiper-pagination-bullet {
-    background: #3D5C6F !important;
-    width: 40px !important;
-    height: 40px !important;
-    transform: scale(0.4);
-    transition: border .2s;
+  background: #3d5c6f !important;
+  width: 40px !important;
+  height: 40px !important;
+  transform: scale(0.4);
+  transition: border 0.2s;
 }
 
 .swiper-wrapper {

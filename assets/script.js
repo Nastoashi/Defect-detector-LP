@@ -69,9 +69,19 @@ submit.addEventListener('submit', (e) => {
     }).then(function thank() {
       document.getElementById('form-thankyou').style.display = 'block'
       document.getElementById('form-submit').style.display = 'none'
+      formClose.style.display = 'none'
+      setTimeout(function () {
+        formPopup.classList.remove('show')
+      }, 1800)
+      setTimeout(function () {
+        document.getElementById('form-submit').style.display = 'block'
+        formClose.style.display = 'block'
+        document.getElementById('form-thankyou').style.display = 'none'
+      }, 2200)
     })
   }
 })
 const mobileCheck = () => {
-document.getElementById('mobile-login').innerHTML = 'You cannot do this using a mobile device '
+  document.getElementById('mobile-login').innerHTML =
+    'You cannot do this using a mobile device '
 }
