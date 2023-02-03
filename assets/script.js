@@ -81,6 +81,7 @@ submit.addEventListener('submit', (e) => {
     })
   }
 })
+
 const mobileCheck = () => {
   document.getElementById('mobile-login').innerHTML =
     'You cannot do this using a mobile device '
