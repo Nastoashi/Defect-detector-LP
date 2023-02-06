@@ -762,8 +762,8 @@ input:-internal-autofill-selected {
   }
 
   .hero__wrapper {
-    height: 100vh;
-    padding: 3rem 3rem;
+    min-height: 100vh;
+    padding: 6rem 3rem 4rem;
   }
 
   .hero__content button {
@@ -792,7 +792,7 @@ input:-internal-autofill-selected {
   }
 
   .companies__line {
-    width: 600%;
+    width: 680%;
   }
 
   .companies__line span > span {
@@ -837,7 +837,7 @@ input:-internal-autofill-selected {
     position: relative;
     margin: 40% auto;
     width: 80%;
-    padding: 1.5rem 2rem 2rem;
+    padding: 2rem 1rem 2rem;
   }
 
   .modal-content form {
@@ -872,6 +872,6 @@ input:-internal-autofill-selected {
   }
 
   .footer__logo span {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
