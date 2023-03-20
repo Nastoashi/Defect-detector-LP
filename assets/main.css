@@ -306,6 +306,10 @@ footer {
   justify-content: center;
 }
 
+.footer__logo img {
+  width: 160px;
+}
+
 .footer__content > ul {
   display: flex;
   margin: 2rem 0 !important;

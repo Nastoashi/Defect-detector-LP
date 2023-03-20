@@ -215,9 +215,10 @@ video {
 .logo {
   display: flex;
   align-items: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  gap: 1rem;
+}
+
+.logo img {
+  width: 130px;
 }
 
 .menu-item {
