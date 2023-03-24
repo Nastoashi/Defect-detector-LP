@@ -1216,7 +1216,7 @@ input:-internal-autofill-selected {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #000;
+  background-color: #16232b;
   border-radius: 12px;
 }
 .contact__content > div > div {
